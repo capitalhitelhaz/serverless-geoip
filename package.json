@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Use MaxMind GeoLite2 database with AWS Lambda and serverless",
   "main": "index.js",
+  "engines" : { "node" : "8.10" },
   "scripts": {
     "deploy": "sls deploy"
   },
