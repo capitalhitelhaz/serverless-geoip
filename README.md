@@ -1,5 +1,7 @@
 # Serverless GeoIP
 
+[![Codeship Status for capitalhitelhaz/serverless-geoip](https://app.codeship.com/projects/399a59e0-d156-0137-e549-7a3d993b42a3/status?branch=master)](https://app.codeship.com/projects/369439)
+
 Use AWS Lambda and [MaxMind GeoLite](http://dev.maxmind.com/geoip/geoip2/geolite2/) to query for locations of IP addresses. You can invoke the function or use API Gateway to send an HTTP request with the IP address to lookup.
 
 ## Install
