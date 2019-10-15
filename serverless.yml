@@ -2,10 +2,11 @@ service: serverless-geoip
 
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs8.10
   memorySize: 256
   timeout: 30
-  region: us-east-1
+  region: eu-west-1
+  profile: ${self:provider.environment.AWS_PROFILE,''}
 
 package:
   exclude:
