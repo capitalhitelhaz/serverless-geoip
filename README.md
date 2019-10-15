@@ -7,9 +7,9 @@ Use AWS Lambda and [MaxMind GeoLite](http://dev.maxmind.com/geoip/geoip2/geolite
 ## Install
 
 ```bash
-$ > git clone git@github.com:sbstjn/serverless-geoip.git
-$ > cd serverless-geoip
-$ > yarn install
+\$ > git clone git@github.com:sbstjn/serverless-geoip.git
+\$ > cd serverless-geoip
+\$ > yarn install
 ```
 
 ## Configure
@@ -22,10 +22,10 @@ Download the [GeoLite2 City](http://dev.maxmind.com/geoip/geoip2/geolite2/) data
     └── GeoLite2-City.mmdb
 ```
 
-## Deploy 
+## Deploy
 
 ```bash
-$ > yarn deploy
+\$ > yarn deploy
 
 …
 
@@ -38,7 +38,7 @@ endpoints:
 ### Invoke
 
 ```bash
-$ > sls invoke -f lookup --data '{ "ip": "8.8.8.8" }'
+\$ > sls invoke -f lookup --data '{ "ip": "8.8.8.8" }'
 
 {
     "continent": {
@@ -56,7 +56,7 @@ $ > sls invoke -f lookup --data '{ "ip": "8.8.8.8" }'
 ### HTTP Request
 
 ```bash
-$ > curl https://randomid.execute-api.us-east-1.amazonaws.com/dev/ip/8.8.8.8
+\$ > curl https://randomid.execute-api.us-east-1.amazonaws.com/dev/ip/8.8.8.8
 
 {"continent":{"code":"NA","geoname_id":6255149,"names":{"de":"Nordamerika","en":"North America", …
 ```
