@@ -37,3 +37,14 @@ functions:
             headers:
               Content-Type: "'application/json'"
             template: $input.json('$')
+  lookupDefault:
+    handler: src/lookup.run
+    events:
+      - http:
+          method: GET
+          path: /ip
+          integration: lambda
+          response:
+            headers:
+              Content-Type: "'application/json'"
+            template: $input.json('$')
