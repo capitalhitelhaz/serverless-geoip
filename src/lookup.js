@@ -10,7 +10,7 @@ const run = (event, ctx, callback) => {
   
   let ip = event.ip
   if (!ip) {
-    ip = event.identity.sourceIP
+    ip = event.identity.sourceIp
   }
 
   Reader.open(__dirname + '/../data/GeoLite2-City.mmdb',

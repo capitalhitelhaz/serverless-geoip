@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Use MaxMind GeoLite2 database with AWS Lambda and serverless",
   "main": "index.js",
-  "engines" : { "node" : "8.10" },
+  "engines": {
+    "node": "8.10"
+  },
   "scripts": {
+    "offline": "sls offline start -r us-east-1 --noTimeout",
     "deploy": "sls deploy"
   },
   "keywords": [
@@ -17,6 +20,7 @@
     "mmdb-reader": "^1.1.0"
   },
   "devDependencies": {
-    "serverless": "^1.24.0"
+    "serverless": "^1.24.0",
+    "serverless-offline": "^5.12.0"
   }
 }

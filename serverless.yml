@@ -1,5 +1,7 @@
 service: serverless-geoip
 
+plugins:
+  - serverless-offline
 provider:
   name: aws
   runtime: nodejs8.10
@@ -7,6 +9,11 @@ provider:
   timeout: 30
   region: eu-west-1
   profile: ${self:provider.environment.AWS_PROFILE,''}
+
+custom:
+  serverless-offline:
+    port: 3000
+    host: 0.0.0.0
 
 package:
   exclude:
